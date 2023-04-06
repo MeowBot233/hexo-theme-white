@@ -75,6 +75,9 @@
         <% if ( theme.comments.system ==='livere' && theme.comments.livere && theme.comments.livere.dataId && theme.comments.livere.dataUid ){ %>
           <%- partial('post/comment-livere') %>
         <% } %>
+        <!-- Giscus -->
+        <% if ( theme.comments.system ==='giscus') %>
+          <%- partial('post/comment-giscus') %>
         </div>
       </div>
     <% } %>
