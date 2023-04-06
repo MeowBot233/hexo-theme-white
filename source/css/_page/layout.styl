@@ -6,6 +6,7 @@
 body 
   height 100%
   width 100%
+  background-color $color-background
 a 
   text-decoration none
   color $color-text-main
@@ -15,7 +16,7 @@ body,p,div,span
 ::-webkit-scrollbar 
   width 5px
   height 5px
-  background-color #ffffff
+  background-color $color-background
 ::-webkit-scrollbar-thumb 
   background-color $color-theme-main
 /* menu */
@@ -96,7 +97,7 @@ body,p,div,span
   justify-content center
 .body-inner 
   width $layout-max-width
-  background-color #fff
+  background-color $color-background
 /* home */
 .intro-content 
   margin-top 150px
@@ -107,12 +108,14 @@ body,p,div,span
   font-weight 1000
   margin 0
   padding 0
+  color $color-text-main
 .intro-sub 
   font-family Gothic
   margin-top 30px
   font-size 1.2em
   line-height 1.8em
   margin-left 5px
+  color $color-text-main
   a 
     display inline-block
     font-family Gothic
@@ -136,7 +139,7 @@ body,p,div,span
   line-height 1.8em
   margin-left 5px
 .intro-content,a 
-  color #2e2e2e
+  color $color-text-main
   text-decoration none
   margin-right 3px
 /* archive */
@@ -152,10 +155,11 @@ body,p,div,span
   margin: 40px 0px 30px 0px
   font-family: Merriweather
   text-align: center
+  color $color-text-main
 .archive-post 
   line-height 1.5em
   font-size 1em
-  background-color #fff
+  background-color $color-background
   border-radius 3px
   transition .4s
   display flex
