@@ -14,13 +14,13 @@
       </div>
       <div class="post-content-main animate__animated  animate__fadeInUp">
         <!-- top型目录 -->
-        <%if(page.toc!==false && theme.tocenabled === true && toc(page.content).length!==0 && theme.toc.side !== true){%>
+        <%if(page.toc!==false && theme.toc.enabled === true && toc(page.content).length!==0 && theme.toc.side !== true){%>
           <%- toc(page.content,{class:"toc-top",list_number:false,max_depth: theme.toc.max,min_depth: theme.toc.min}) %>
         <%}%>
         <%-page.content%>
       </div>
       <div class="post-content-inner-space">
-        <%if(page.toc!==false && theme.tocenabled === true && toc(page.content).length!==0 && theme.toc.side === true){%>
+        <%if(page.toc!==false && theme.toc.enabled === true && toc(page.content).length!==0 && theme.toc.side === true){%>
           <div class="space-toc-main animate__animated  animate__fadeInUp">
             <%- toc(page.content,{class:"space-toc",list_number:false,max_depth: theme.toc.max,min_depth: theme.toc.min}) %>
            </div>
@@ -28,7 +28,7 @@
       </div>
    </div>
     <!-- 评论 -->
-    <% if (page.comments !== false && theme.commentsenabled === true){ %>
+    <% if (page.comments !== false && theme.comments.enabled === true){ %>
     <div class="bottom-comments-outer">
       <div class="bottom-comments-inner">
         <!-- valine -->
