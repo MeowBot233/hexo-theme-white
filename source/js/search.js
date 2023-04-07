@@ -88,8 +88,8 @@ var searchFunc = function(path, search_id, content_id) {
                 str += "</ul>";
                 $resultContent.innerHTML = str;
             }
-
-            $input.value = getUrlParams(document.URL)['q'];
+            let q = getUrlParams(document.URL)['q'];
+            if(q) $input.value = q;
             $input.addEventListener('input', search);
             search.call($input);
 
