@@ -4,7 +4,7 @@ hexo.extend.filter.register(
   'after_post_render',
   function (data) {
     var theme = hexo.theme.config
-    if (theme.lazyload.open!==true) return;
+    if (theme.lazyloadenabled!==true) return;
 
     data.content = data.content.replace(
       // Match 'img' tags width the src attribute.

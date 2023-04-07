@@ -17,7 +17,7 @@ style:
       text-secondary: "#A0A0A0" # 文字次色调
       background: "#202020" # 背景色
   animation:
-    open: true # 如果开启动画的话会引入animation.css
+    enabled: true # 如果开启动画的话会引入animation.css
 
 
 ########## 关于主页的设置 ##########
@@ -66,7 +66,7 @@ menu:
 
 ## 本地搜索
 search:
-  open: false # 是否开启
+  enabled: false # 是否开启
   page: /search # 页面路径（通常命名为search）
 
 
@@ -93,7 +93,7 @@ contact:
 
 # 文章toc索引栏设置
 toc:
-  open: true # 是否开启
+  enabled: true # 是否开启
   side: true  # 选择toc的位置，填true的话toc将会显示在文章的侧边，填false的话 toc将出现在文章的开头
   max: 3 #最大深度
   min: 2 #最小深度
@@ -108,7 +108,7 @@ plugins:
 
 # 评论系统设置
 comments:
-  open: false #是否开启评论系统
+  enabled: false #是否开启评论系统
   system: giscus #选择评论系统 可选 valine gitalk livere giscus
   # Valine
   valine:
@@ -158,7 +158,7 @@ footer: Power by [Hexo](http://hexo.io/) Theme by [White](https://github.com/FuS
 
 #有分类时是否开启menu分类页和自定义名字
 menu_categories:
-  open: true
+  enabled: true
   name: 分类
 
 #可自定义归档标签页名字
@@ -167,4 +167,4 @@ archive_tab_name: Blog
 
 #图片懒加载
 lazyload:
-  open: true #是否开启
+  enabled: true #是否开启
