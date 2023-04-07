@@ -87,6 +87,15 @@ var searchFunc = function(path, search_id, content_id) {
                 str += "</ul>";
                 $resultContent.innerHTML = str;
             });
+
+            $input.value = getUrlParams(document.URL)['q'];
         }
     });
+}
+
+function getUrlParams(url) {
+	let urlStr = url.split('?')[1]
+	const urlSearchParams = new URLSearchParams(urlStr)
+	const result = Object.fromEntries(urlSearchParams.entries())
+	return result
 }
