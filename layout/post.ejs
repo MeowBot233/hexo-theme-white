@@ -76,8 +76,9 @@
           <%- partial('post/comment-livere') %>
         <% } %>
         <!-- Giscus -->
-        <% if ( theme.comments.system ==='giscus') %>
+        <% if ( theme.comments.system ==='giscus') { %>
           <%- partial('post/comment-giscus') %>
+        <% } %>
         </div>
       </div>
     <% } %>
