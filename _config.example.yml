@@ -24,6 +24,7 @@ style:
 # home页可选类型
 home:
   type: "home" # 主页的类型，可选 home | img | simple
+  footer: false
 
 # archive页可选类型
 archive:
@@ -102,8 +103,8 @@ toc:
 plugins:
   # 代码高亮，想要使用代码高亮，得先把根目录的_config.yml里的highlight的enable置成false
   highlightjs:
-    js: https://cdn.bootcdn.net/ajax/libs/highlight.js/11.7.0/highlight.min.js
-    css: https://cdn.bootcdn.net/ajax/libs/highlight.js/11.7.0/styles/default.min.css
+    js: https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js
+    css: https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css
     # more: https://www.jsdelivr.com/package/npm/highlight.js?path=styles
 
 # 评论系统设置
